@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>java script</title>
+
+    </head>
+    <body>
+
+        <!-- FIRST FUNCTION -->
+         <p>Enter a numnber to get square of that number:</p> 
+        <input type="number" name="num" id="numb">
+        <input type="button" value="click here" onclick="mul()"/> 
+        <p id="a"></p>
+         <!-- SECOND FUNCTION -->
+         <label for="text">NAME:</label>
+        <input type="text" id="text" name="text">
+        <button id="button" onclick="call()">call</button>
+        <p id="b"></p> 
+    
+        
+        <script>
+         function mul(){
+                let num=document.getElementById("numb").value;
+                 alert("The value of "+num+ " "+"square is"+num*num);
+                 document.getElementById("a").innerHTML= "The value of "+num+ " "+"square is"+num*num
+             }
+             function call(){
+           let a = document.getElementById("text").value;
+           document.getElementById("b").innerHTML="Hello "+" "+ a+ " how are you"
+           }
+
+        </script>
+       
+     
+       
+    </body>
+</html>

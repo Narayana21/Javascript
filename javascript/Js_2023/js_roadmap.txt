@@ -1,0 +1,97 @@
+BASICS
+----------
+
+1) Ways to run java script
+
+* scrpt tag
+* browser console
+* external file link
+
+2) Variables
+
+* Declaration -var,let,const
+* Scope
+* Hoisting
+
+3) Data Types
+
+     i) Primitive
+
+       * number
+       * string
+       * boolean
+
+     ii) Special
+
+       * undefined
+       * Null
+
+     iii) Composite
+
+         * Arrays
+         * object
+
+4) Data structures
+  * Arrays
+  * set
+  * map
+  * weak set
+  * weak map
+  * date
+
+5) Lopps
+ 
+* for
+* for..in
+* for.. of
+* while
+* do..while
+* break,continue
+
+6) control flow
+
+* if..else
+* switch
+* try..catch..throw
+
+7) Functions
+
+* Decalaration,definition
+* function expressions
+* function calling
+* arguments & parameters
+* Arrow functions
+* Higher order functions
+
+
+
+===========================================================
+
+Advanced
+--------
+
+* classes
+* prototype
+* closure
+* prototype inheritance
+* This keyword
+* Asynchronous programming
+*  Modules
+* Generators
+* Currying
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

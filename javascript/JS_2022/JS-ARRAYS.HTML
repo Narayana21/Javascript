@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>JS-ARRAYS</title>
+        <style>
+            div p{
+                font-size: medium;
+                height: max-content;
+            }
+            body{
+                background-color: beige;
+            }
+        </style>
+       
+    </head>
+
+<body>
+ <h1>JS-ARRAYS</h1>
+ <h3>SOME BASIC ARRAY METHODS</h3>
+    <div>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+    <p id="a6"></p>
+    <span id="p1"></span>
+    <p id="a7"></p>
+    <p id="a8"></p>
+    <p>BY DEFAULT THE LASTLY PUSHED VALUE USIING PUSH() WILL BE REMOVED USING POP()<br>
+     OR THE LAST INDEX VALUE OF THE ARRAY WILL BE REMOVED</p>
+    <p id="a9"></p>
+    <p id="b1"></p>
+    <p id="b2"></p>
+    <p id="b3"></p>
+    <p id="b4"></p>
+    <p id="b5"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    </div>
+    <!-- <p id="demo1"></p>
+    <p id="demo2"></p> --> 
+    
+
+    <script>
+        // INITAL ARRAY
+        const names=["name1","name2","name3","name4"];
+        document.getElementById("a1").innerHTML= "INITIAL ARRAY:  " + names; //DISPLAYING THE ARRAY
+        //CHANGING 0TH POSITION OF ARRAY
+        names[0]="narayana";
+        document.getElementById("a2").innerHTML="AFTER CHANGING VALUE:  "+names;
+        // DISPLAYING LENGHT BEFORE ADDING A ELEMENT 
+        document.getElementById("a3").innerHTML="BEFORE ADDING A NAME, ORIGINAL ARRAY SIZE IS: "+ names.length;
+        let result1 = names.push("name5")
+        document.getElementById("a4").innerHTML=" DISPLAYING ARRAY ELEMEMTS WITH NEWLY ADDED NAME: " + names;
+        document.getElementById("a5").innerHTML="AFTER ADDING A NAME, NEW ARRAY SIZE IS: "+ result1;
+        let result2 = names.indexOf("name3");
+        document.getElementById("a6").innerHTML="DISPLAYING INDEX POSITION \"PASSING NAME AS ARGUEMENT\" OF PARTICULAR ELEMENT IN ARRAY: "+ result2;
+        document.getElementById("p1").innerHTML="DISPLAYING ELEMENT \"PASSING INDEX VALUE AS ARGUEMENT\" OF PARTICULAR ELEMENT IN ARRAY: "+ names[0];
+        let result3 = names.join("$");
+        document.getElementById("a7").innerHTML="JOINED A SYMBOL USING JOIN(): "+ result3;
+        let result4 = names.pop();
+        document.getElementById("a8").innerHTML="REMOVING \"NAME5\" THAT IS SEND INTO ARRAY USING PUSH(): "+ result4;
+        let result5 =names.concat([10,20,30,40,"added numbers"])
+        document.getElementById("a9").innerHTML="CONCATINATION OF ANOTHER ARRAY INTO PREVIOUS ARRAY:  "+ result5;
+         const numbers = ["Banana", "Orange", "Apple", "Mango"]
+         numbers.sort();
+         document.getElementById("b4").innerHTML ="SORTING ELEMENTS OF ARRAY IN ASCENDIND ORDER:"+ numbers;
+
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+         fruits.sort();
+         fruits.reverse();
+         document.getElementById("b5").innerHTML ="SORTING ELEMENTS OF ARRAY IN DESCENDING ORDER :"+ fruits;
+
+         const points = [40, 100, 1, 5, 25, 10];
+         document.getElementById("demo1").innerHTML ="BEFORE SORTING"+ points;
+
+         points.sort(function(a, b){return a-b});
+         document.getElementById("demo2").innerHTML = "ASCENDING ORDER :"+" "+points;
+
+         points.sort(function(a, b){return b-a});
+         document.getElementById("demo3").innerHTML = "ASCENDING ORDER: "+" "+points;
+      console.log(points)
+     console.log("hello")
+        </script> 
+  
+</body>
+
+    </html>
